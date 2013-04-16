@@ -10,3 +10,6 @@
 [submodule "bundle/rsnapshot"]
 	path = bundle/rsnapshot
 	url = https://git.gitorious.org/spiette/vim-rsnapshot.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
