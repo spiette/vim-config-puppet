@@ -9,6 +9,9 @@ set ignorecase
 set smartcase
 set nohlsearch
 set laststatus=2
+set splitbelow
+set splitright
+
 syntax on
 
 filetype plugin indent on
