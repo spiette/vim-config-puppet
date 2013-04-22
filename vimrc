@@ -12,6 +12,9 @@ set laststatus=2
 set splitbelow
 set splitright
 
+set listchars=tab:>·,trail:·
+set list
+
 syntax on
 
 filetype plugin indent on
