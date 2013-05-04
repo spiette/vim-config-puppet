@@ -38,3 +38,13 @@ function! ListcharsToggle()
 endfunction
 
 call pathogen#infect()
+
+set background=dark
+if &term == 'xterm-256color'
+    colorscheme solarized
+elseif &term == 'xterm'
+    set t_Co=16
+    colorscheme desert
+else
+    colorscheme desert
+endif
