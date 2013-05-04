@@ -1,21 +1,29 @@
-"set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-"set smarttab
-set wildmenu
 set showcmd
 set ignorecase
 set smartcase
 set nohlsearch
 set laststatus=2
+
 set splitbelow
 set splitright
 
-set listchars=tab:>·,trail:·
+let g:fulllistchars = 0
+set listchars=tab:▸\ ,trail:·
 set list
 
-syntax on
+nnoremap <Leader>l :call ListcharsToggle()<CR>
+function! ListcharsToggle()
+    if g:fulllistchars
+        let g:fulllistchars = 0
+        setlocal listchars=tab:▸\ ,trail:·
+    else
+        let g:fulllistchars = 1
+        setlocal listchars=tab:▸·,trail:·,eol:¶,extends:>,precedes:<
+    endif
+endfunction
 
 filetype plugin indent on
 
