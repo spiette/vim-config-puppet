@@ -10,6 +10,9 @@ set laststatus=2
 set splitbelow
 set splitright
 
+set wildmenu
+set wildmode=longest,list
+
 filetype plugin indent on
 
 " with gnupg plugin
