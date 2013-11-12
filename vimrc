@@ -17,14 +17,15 @@ filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 " with gnupg plugin
-map ,e :GPGEditRecipients<CR>
+map <Leader>e :GPGEditRecipients<CR>
 
-map ,p :r!pwgen -n -c 12<CR>
+map <Leader>p :r!pwgen -n -c 12<CR>
+map <Leader>pq :r!pwqgen<CR>
 "
 " remove trailing spaces
-nnoremap <silent> ,s :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-map ,v :set invpaste paste?<CR>
-set pastetoggle=,v
+nnoremap <silent> <Leader>s :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+map <Leader>v :set invpaste paste?<CR>
+set pastetoggle=<Leader>v
 
 let g:fulllistchars = 0
 set listchars=tab:▸\ ,trail:·
