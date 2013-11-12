@@ -14,6 +14,7 @@ set wildmenu
 set wildmode=longest,list
 
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 " with gnupg plugin
 map ,e :GPGEditRecipients<CR>
