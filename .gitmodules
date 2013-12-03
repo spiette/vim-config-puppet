@@ -25,3 +25,12 @@
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes
+[submodule "bundle/Lucius"]
+	path = bundle/Lucius
+	url = https://github.com/vim-scripts/Lucius.git
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
+[submodule "bundle/latex-box"]
+	path = bundle/latex-box
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git

@@ -1,4 +1,3 @@
-call pathogen#infect()
 " tabs {{{
 set softtabstop=4
 set shiftwidth=4
@@ -15,10 +14,13 @@ set showcmd
 filetype plugin indent on
 " }}}
 " mappings {{{
-" with gnupg plugin
-map ,e :GPGEditRecipients<CR>
+set omnifunc=syntaxcomplete#Complete
 
-map ,p :r!pwgen -n -c 12<CR>
+" with gnupg plugin
+map <Leader>e :GPGEditRecipients<CR>
+
+map <Leader>p :r!pwgen -n -c 12<CR>
+map <Leader>pq :r!pwqgen<CR>
 "
 " remove trailing spaces
 nnoremap <silent> ,s :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
@@ -26,6 +28,10 @@ map ,v :set invpaste paste?<CR>
 set pastetoggle=,v
 " }}}
 " listchars {{{
+nnoremap <silent> <Leader>s :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+map <Leader>v :set invpaste paste?<CR>
+set pastetoggle=<Leader>v
+
 let g:fulllistchars = 0
 set listchars=tab:▸\ ,trail:·
 set list
@@ -42,9 +48,17 @@ function! ListcharsToggle()
 endfunction
 " }}}
 " colors {{{
-set background=dark
+" set background=dark
+
+call pathogen#infect()
+
 if &term == 'xterm-256color'
-    colorscheme solarized
+    "colorscheme solarized
+    "colorscheme zenburn
+    "colorscheme earendel
+    "colorscheme proton
+    colorscheme lucius
+    LuciusWhite
 elseif &term == 'xterm'
     set t_Co=16
     colorscheme desert
