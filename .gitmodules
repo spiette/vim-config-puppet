@@ -31,3 +31,6 @@
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = https://github.com/sukima/xmledit.git
+[submodule "bundle/latex-box"]
+	path = bundle/latex-box
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
