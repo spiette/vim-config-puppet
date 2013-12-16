@@ -67,5 +67,6 @@ else
 endif
 " }}}
 " folding {{{
+setlocal modeline
 " vim:foldmethod=marker:foldlevel=0
 " }}}
