@@ -34,3 +34,6 @@
 [submodule "bundle/latex-box"]
 	path = bundle/latex-box
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "bundle/ansible-yaml"]
+	path = bundle/ansible-yaml
+	url = git://github.com/chase/vim-ansible-yaml.git
