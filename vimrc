@@ -57,14 +57,14 @@ if &term == 'xterm-256color'
     "colorscheme zenburn
     "colorscheme earendel
     "colorscheme proton
-    colorscheme lucius
-    LuciusWhite
+    colorscheme desert256
 elseif &term == 'xterm'
     set t_Co=16
     colorscheme desert
 else
     colorscheme desert
 endif
+syntax on
 " }}}
 " folding {{{
 setlocal modeline
