@@ -16,9 +16,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/tpope/vim-markdown
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes
