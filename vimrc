@@ -47,6 +47,9 @@ function! ListcharsToggle()
     endif
 endfunction
 " }}}
+" backspace {{{
+set backspace=indent,eol,start
+" }}}
 " colors {{{
 " set background=dark
 
