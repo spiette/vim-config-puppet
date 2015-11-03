@@ -14,9 +14,11 @@ The plugins will:
 
 To use, clone the repository like this (assuming no ~/.vim directory or .vimrc file already exists):
 
-    git clone https://github.com/spiette/vim-config-puppet
-    git submodule update --init # will fetch other plugins on github
     cd ~
+    git clone https://github.com/spiette/vim-config-puppet .vim
+    cd .vim
+    git submodule update --init # will fetch other plugins on github
+    cd -
     ln -s .vim/vimrc .vimrc
 
 To use syntastic with puppet, install puppet and puppet-lint
