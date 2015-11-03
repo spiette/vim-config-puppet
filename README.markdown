@@ -14,7 +14,7 @@ The plugins will:
 
 To use, clone the repository like this (assuming no ~/.vim directory or .vimrc file already exists):
 
-    git clone git@github.com:spiette/vim-config-puppet
+    git clone https://github.com/spiette/vim-config-puppet
     git submodule update --init # will fetch other plugins on github
     cd ~
     ln -s .vim/vimrc .vimrc
